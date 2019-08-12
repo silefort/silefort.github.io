@@ -9,12 +9,14 @@ RUN yum makecache
 
 # Install necessary packages
 RUN yum install -y  python-pip \
-                    python dev 
+                    python dev \
+                    make
+
 RUN export LC_ALL="en_US.UTF-8"
 
 # Install Pelican and dependencies
 RUN pip install pelican      \
-                markdown    
+                markdown     
 
 EXPOSE 80
 

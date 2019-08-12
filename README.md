@@ -15,6 +15,8 @@ This repo is used to build and host my personal Tech Blog on github pages
 
     $ docker run --rm -di -p 80:80 -v $(pwd):/app --name pelican pelican
 
+Your blog is then accessible at http://localhost
+
 ### Quickstart your website ( you will do it only once to setup your pelican project)
 
 Follow the instructions provided, it will create the files/directories structure needed
@@ -52,5 +54,9 @@ You must answer 'yes' or 'no'
 ### Update your website
 
 Once you've worked on your website (mostly working with markdown pages and pelicanconf ), you can update your html pages using the following command:
+
+    $ docker exec pelican make html
+
+or ( if answered "no" to "Do you want to generate a tasks.py/Makefile to automate generation and publishing?" ) 
 
     $ docker exec pelican pelican content -o output -s publishconf.py
