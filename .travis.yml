@@ -7,4 +7,4 @@ before_install:
   - docker build -t pelican .
 
 script:
-  - docker run -e CI=true pelican make html
+  - docker run -v $(pwd):/app -e CI=true pelican make html
