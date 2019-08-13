@@ -18,6 +18,7 @@ RUN export LC_ALL="en_US.UTF-8"
 RUN pip install pelican      \
                 markdown     
 
+COPY . .
 EXPOSE 80
 
 CMD ["pelican","--listen","-p","80"]
