@@ -9,3 +9,12 @@ before_install:
 script:
   - docker run -v $(pwd):/app -e CI=true pelican make html
   - ls .
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  local_dir: output
+  on:
+    branch: dev
