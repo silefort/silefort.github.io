@@ -5,14 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <!-- twitter card metadata -->
-<meta name="twitter:site" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/images/site-cover.jpg">
+<meta name="twitter:creator" content="@silefort">
+<meta name="twitter:site" content="@silefort">
 <meta name="twitter:title" content="Tech This Out">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="An online version of my "How to"'s and "Today I Learned"'s">
         <!-- OG Tags -->
 <meta property="og:url" content=""/>
 <meta property="og:title" content="Tech This Out" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="An online version of my "How to"'s and "Today I Learned"'s" />
+<meta property="og:image" content="/images/site-cover.jpg" />
         <!-- favicon -->
+        <link rel="icon" type="image/png" href="/images/avatar.png">
         <!-- moment.js for date formatting -->
         <script src="/theme/js/moment.js"></script>
         <!-- css -->
@@ -44,10 +49,11 @@
 <body>
     <div role="banner" id="masthead">
         <header>
-            <h1><a href="/">'s Blog</a></h1>
+            <a href="/"><img src="/images/avatar.png" alt="McManus Logo"></a>
             <a href="#menu" id="menu-link">more stuff</a>
             <nav id="menu">
                 <ul>
+                            <li><a href="/category/misc.html">misc</a></li>
                 </ul>
             </nav>
         </header>
@@ -55,10 +61,38 @@
         <div class="page" role="main">
 <div class="articles">
         <ol>
+            <li>
+                <article>
+                    <footer>
+                         <p>
+                            <time datetime="2019-08-14 00:00:00+02:00">
+                                <script>document.write(moment('2019-08-14 00:00:00+02:00').format('LL'));</script>
+                            </time>
+                                    in <a href="/category/misc.html"><span class="category-tag">misc</span></a>
+                        </p>
+                    </footer>
+                    <header>
+                        <a href="/first-post-on-my-sweet-new-blog.html">
+                            <h2>First Post on My Sweet New Blog</h2>
+                        </a>
+                    </header>
+                    <div class="summary">This is my first Post </div>
+                    <div class="tags">
+                        <ul class="tags">
+                            <li><a href="/tag/post.html" class="tag">post</a></li>
+                        </ul>
+                    </div>
+                    <a href="/first-post-on-my-sweet-new-blog.html">
+                        <p class="readmore">Read more...</p>
+                    </a>
+                </article>
+            </li>
         </ol>
         
 </div>                <footer>
                     <div class="icons">
+                        <a href="https://twitter.com/si_lefort" target="_blank"><div class="icon-twitter icon"></div></a>
+                        <a href="https://github.com/silefort" target="_blank"><div class="icon-github icon"></div></a>
                     </div>
                     <p>© <script>document.write(moment().format('YYYY'));</script> Simon</p>
                 </footer>
