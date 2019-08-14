@@ -13,6 +13,15 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 
 THEME = 'themes/brutalist'
+SITEIMAGE = 'site-cover.jpg'
+SITEDESCRIPTION = 'An online version of my "How to"\'s and "Today I Learned"\'s'
+FAVICON = 'avatar.png'
+LOGO = 'avatar.png'
+FIRST_NAME = 'Simon'
+
+TWITTER_USERNAME = '@silefort'
+TWITTER = 'https://twitter.com/si_lefort'
+GITHUB = 'https://github.com/silefort'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
