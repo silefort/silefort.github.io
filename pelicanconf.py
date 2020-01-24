@@ -44,3 +44,6 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+### VOCE
+USER_LOGO_URL = 'images/avatar.png'
