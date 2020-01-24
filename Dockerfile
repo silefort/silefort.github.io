@@ -21,4 +21,4 @@ RUN pip install pelican      \
 COPY . .
 EXPOSE 80
 
-CMD ["pelican","--listen","-p","80"]
+CMD ["pelican","--listen","-p","80","-b","0.0.0.0"]
