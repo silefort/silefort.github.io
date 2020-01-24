@@ -12,7 +12,7 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
 
-THEME = 'themes/brutalist'
+THEME = 'themes/voce'
 SITEIMAGE = 'site-cover.jpg'
 SITEDESCRIPTION = 'An online version of my "How to"\'s and "Today I Learned"\'s'
 FAVICON = 'avatar.png'
