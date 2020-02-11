@@ -4,6 +4,7 @@ services:
   - docker
 
 before_install:
+  - ls content/
   - docker build -t pelican .
 
 script:
