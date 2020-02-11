@@ -15,7 +15,7 @@ RUN yum install -y  python-pip \
 RUN export LC_ALL="en_US.UTF-8"
 
 # Install Pelican and dependencies
-RUN pip install pelican      \
+RUN pip install pelican==4.1.0      \
                 markdown     
 
 COPY . .
