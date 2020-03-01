@@ -6,7 +6,7 @@ tags: whatsup
 
 Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:
 
-* __Thttps://opensource.com/article/20/2/ssh-toolshe Shadow Organizational Chart__: The author of this article is a CEO, he wanted to know the "unofficial organisation" within it's organisation, the method ( and the results are really interesting)| [https://carta.com/blog/the-shadow-organizational-chart/](https://carta.com/blog/the-shadow-organizational-chart/)
+* __The Shadow Organizational Chart__: The author of this article is a CEO, he wanted to know the "unofficial organisation" within it's organisation, the method ( and the results are really interesting)| [https://carta.com/blog/the-shadow-organizational-chart/](https://carta.com/blog/the-shadow-organizational-chart/)
 <br></br>
 * __How to solve the DevOps vs. ITSM culture clash__: Just remember than wether you want to follow ITIL or DevOps principles, collaboration, monitoring and reporting are the 3 pillars that needs to be followed | [https://opensource.com/article/20/2/devops-vs-itsm](https://opensource.com/article/20/2/devops-vs-itsm)
 <br></br>
