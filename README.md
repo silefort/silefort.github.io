@@ -4,7 +4,7 @@ This repo is used to build and host my personal Tech Blog on github pages
 
 * I use pelican ( https://blog.getpelican.com/ ) to build the html pages
 * I use TravisCI to deploy it ( https://travis-ci.org/ )
-* Theme is https://github.com/mc-buckets/brutalist
+* Theme used is https://github.com/mc-buckets/brutalist
 
 ## Development Process
 
