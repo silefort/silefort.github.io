@@ -1,130 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <title>Tech This Out</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
-        <!-- twitter card metadata -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="/images/site-cover.jpg">
-<meta name="twitter:creator" content="@silefort">
-<meta name="twitter:site" content="@silefort">
-<meta name="twitter:title" content="Tech This Out">
-<meta name="twitter:description" content="An online version of my "How to"'s and "Today I Learned"'s">
-        <!-- OG Tags -->
-<meta property="og:url" content=""/>
-<meta property="og:title" content="Tech This Out" />
-<meta property="og:description" content="An online version of my "How to"'s and "Today I Learned"'s" />
-<meta property="og:image" content="/images/site-cover.jpg" />
-        <!-- favicon -->
-        <link rel="icon" type="image/png" href="/images/avatar.png">
-        <!-- moment.js for date formatting -->
-        <script src="/theme/js/moment.js"></script>
-        <!-- css -->
-        <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
-		<script>
-			
-                /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
-    
-    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
-                
-                grunticon(["/theme/css/icons.data.svg.css", "/theme/css/icons.data.png.css", "/theme/css/icons.fallback.css"]);
-            </script>
-        <noscript><link href="/theme/css/icons.fallback.css" rel="stylesheet"></noscript>
-        <!-- menu toggle javascript -->
-        <script type="text/javascript">
-            document.addEventListener("DOMContentLoaded", initMenu);
-            
-            function initMenu(){
-                var menu = document.getElementById("menu");
-                var menulink = document.getElementById("menu-link");
-                menulink.addEventListener("click", function toggleMenu(){
-                        window.event.preventDefault();
-                        menulink.classList.toggle('active');
-                        menu.classList.toggle('active');              
-                    });
-            };
-        </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="@si_lefort">
+  <meta name="description" content="Articles by @si_lefort">
+
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">  
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/theme/css/font.css" type="text/css" media="all">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/theme/css/style.css" type="text/css" media="all">
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/theme/js/functions.js"></script>
+
+  
+ 
+
+
+  <meta name="keywords" content="whatsup">
+
+  <title>Tech This Out.com</title>
+
+  
 </head>
-<body>
-    <div role="banner" id="masthead">
-        <header>
-            <a href="/"><img src="/images/avatar.png" alt="McManus Logo"></a>
-            <a href="#menu" id="menu-link">more stuff</a>
-            <nav id="menu">
-                <ul>
-                            <li><a href="/category/whats-up.html">#What's Up</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-        <div class="page" role="main">
-<div class="articles">
-        <ol>
-            <li>
-                <article>
-                    <footer>
-                         <p>
-                            <time datetime="2020-01-06 00:00:00+01:00">
-                                <script>document.write(moment('2020-01-06 00:00:00+01:00').format('LL'));</script>
-                            </time>
-                                    in <a href="/category/whats-up.html"><span class="category-tag">#What's Up</span></a>
-                        </p>
-                    </footer>
-                    <header>
-                        <a href="/whats-up-001.html">
-                            <h2>What's Up #001</h2>
-                        </a>
-                    </header>
-                    <div class="summary">A quick extract of the articles that caught my attention this last week </div>
-                    <div class="tags">
-                        <ul class="tags">
-                            <li><a href="/tag/whatsup.html" class="tag">whatsup</a></li>
-                        </ul>
-                    </div>
-                    <a href="/whats-up-001.html">
-                        <p class="readmore">Read more...</p>
-                    </a>
-                </article>
-            </li>
-            <li>
-                <article>
-                    <footer>
-                         <p>
-                            <time datetime="2019-08-14 00:00:00+02:00">
-                                <script>document.write(moment('2019-08-14 00:00:00+02:00').format('LL'));</script>
-                            </time>
-                        </p>
-                    </footer>
-                    <header>
-                        <a href="/first-post-on-my-sweet-new-blog.html">
-                            <h2>First Post on My Sweet New Blog</h2>
-                        </a>
-                    </header>
-                    <div class="summary">This is my first Post </div>
-                    <div class="tags">
-                        <ul class="tags">
-                            <li><a href="/tag/post.html" class="tag">post</a></li>
-                        </ul>
-                    </div>
-                    <a href="/first-post-on-my-sweet-new-blog.html">
-                        <p class="readmore">Read more...</p>
-                    </a>
-                </article>
-            </li>
-        </ol>
-<p class="paginator">
-        <a href="/index.html" class="previous">&laquo;</a>
-    <span>2 / 2</span>
-</p>
-        
-</div>                <footer>
-                    <div class="icons">
-                        <a href="https://twitter.com/si_lefort" target="_blank"><div class="icon-twitter icon"></div></a>
-                        <a href="https://github.com/silefort" target="_blank"><div class="icon-github icon"></div></a>
-                    </div>
-                    <p>© <script>document.write(moment().format('YYYY'));</script> Simon</p>
-                </footer>
+
+<body class="home blog">
+  <div>
+    <header class="site-header">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="row">
+            <div class="site-navigation-inner col-sm-12">
+              <div class="navbar-header">
+                <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul id="menu-all-pages" class="nav navbar-nav">
+                <li class="menu-item"><a href="/" >Home
+<i class="fa  fa-lg"></i></a></li>
+              </ul>
+              </div>
+              <div class="social">   
+                <a href="https://twitter.com/si_lefort" title="Twitter" >
+<i class="fa fa-twitter fa-lg"></i></a>
+                <a href="https://github.com/silefort" title="Github" >
+<i class="fa fa-github fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </nav><!-- .site-navigation -->
+
+      <div class="container">
+      <div id="logo">
+        <span class="site-name"><a class="navbar-brand" href=""><img width="310" src="images/avatar.png" class="attachment-full size-full" alt="logo">          </a>
+        </span><!-- end of .site-name -->
+      </div><!-- end of #logo -->
+        <div class="tagline">
+                <a href="/tag/whatsup.html" >whatsup (11)</a> &#124; 
+                <a href="/archives.html" >Archives (11)</a>
+        </div>
+    </div>
+
+  </header><!-- #masthead -->
+  </div>
+    <div id="content" class="site-content">
+      <div class="container main-content-area">
+        <div class="row">
+          <div class="main-content-inner col-sm-12 col-md-12">
+            <div id="primary" class="content-area">
+              <div id="main" class="site-main" role="main">
+                <div class="article-container">
+<article class="post">
+	<div class="blog-item-wrap">
+		<div class="post-inner-content">
+			<header class="entry-header page-header">
+				<span class="cat-item"><time datetime="2020-01-06 00:00:00+01:00">Mon 06 January 2020</time></span>
+				<h1 class="entry-title"><a href="/whats-up-001.html">What's Up #001</a></h1>
+			</header><!-- .entry-header -->
+			<div class="entry-content">
+				Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here: Run Kubernetes on your machine: This articles explores the options to easily deploy a Kubernetes cluster on your local machine | https://itnext.io/run-kubernetes-on-your-machine-7ee463af21a2 Production Oriented development: If you …
+        	</div><!-- .entry-content -->
+		</div>
+	</div>
+</article><!-- #post-## -->
+                </div>
+<footer>
+<div id="paginator">
+  <span id="left">
+      <a href="/index.html"><i class="fa fa-arrow-circle-left"></i> Prev</a>
+  </span>
+  <span id="right">
+  </span>
+  <div>
+      <a href="/index.html"> 1 </a>
+      <a href="/index2.html">[2]</a>
+  </div>
+</div>
+</footer>
+<div class="article_meta"></div>
+              </div><!-- #main -->
+          </div><!-- #primary -->
+        </div>
+      </div><!-- close .row -->
+    </div><!-- close .container -->
+  </div><!-- close .site-content -->
+
+
+
+
+  <div id="footer-area">
+    <footer id="colophon" class="site-footer" role="contentinfo">
+      <div class="site-info container">
+        <div class="row">
+                    <div class="copyright col-md-12">
+                    <!--<a href="/pages/privacy-policy">Privacy Policy</a> | -->
+                    <!--<a href="/pages/terms-and-conditions">Terms & Conditions</a><br />-->
+                    This site uses the <a href="https://github.com/limbenjamin/voce">voce</a> theme by <a href="//limbenjamin.com/">Benjamin Lim</a><br />
+                    &copy; 2020 <a href="">@si_lefort</a> </div>
+        </div>
+      </div><!-- .site-info -->
+      <div class="scroll-to-top" style="display: none;"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+    </footer><!-- #colophon -->
+  </div>
+
+  <script type="text/javascript">
+    window.addEventListener('load', function(){
+    if (window.location.pathname != '/' && window.location.pathname != '/index.html'){
+      window.scroll(0, document.getElementById('main').offsetTop);
+    }})
+  </script>
+
+
+
 </body>
 </html>
