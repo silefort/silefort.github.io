@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Simon'
+AUTHOR = u'@si_lefort'
 SITENAME = u'Tech This Out'
-SITEURL = ''
+SITEURL = '/'
 
 PATH = 'content'
 
@@ -12,7 +12,7 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
 
-THEME = 'themes/brutalist'
+THEME = 'themes/voce'
 SITEIMAGE = 'site-cover.jpg'
 SITEDESCRIPTION = 'An online version of my "How to"\'s and "Today I Learned"\'s'
 FAVICON = 'avatar.png'
@@ -24,23 +24,30 @@ TWITTER = 'https://twitter.com/si_lefort'
 GITHUB = 'https://github.com/silefort'
 
 # Feed generation is usually not desired when developing
+FEED_ATOM = None
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+USE_FOLDER_AS_CATEGORY = True
+
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Home', '/'),)
+         # ('About', '/About'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Twitter', 'https://twitter.com/si_lefort'),
+        ('Github', 'https://github.com/silefort'),)
+        # ('Feed','https://feeds.com'),)
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+### VOCE
+USER_LOGO_URL = 'images/avatar.png'
+TAGS_URL = 'tags.html'
+ARCHIVES_URL = 'archives.html'
