@@ -1,19 +1,24 @@
-# Automate your docker Images build with Gitlab CI
+title: Automate your docker Images build with Gitlab CI
+description: A quick tutorial to easily automate your containers build
+date: 20200405
+author: Simon
+tags: devops, ci, tutorial, docker
 
-I want to fully automate the deployment of one of my servers using Ansible. I want it to be Test Driven, and I want my tests to be fast.
-My server is a Centos 7 and I want to be able to deploy docker containers on it.
+I have a dedicated server hosted on a Cloud Provider and I want to fully automate the deployment of it using Ansible ( this server will host docker containers on Linux/Centos7). I want to work using TDD (Test Driven Development) methodologies, and I want my tests to be fast.
 
 The first step of this new projet is to build and use a docker container that can be used as a "development environment", and since I will most probably modify it quite a few times in the following weeks I want my image to be built and tested automatically.
 
-So, to do it, let's use Gitlab CI ! The overall process is as follow:
+The process is as follow:
 
-<TODO: Rajouter un schéma>
+* Edit the `Dockerfile`
+* Push the modification to gitlab
+* Gitlab CI automatically fetches the content of the repo
+* It builds the image and push it to the docker hub registry
+* Additionnaly, it can test it 
 
-je commit sur mon poste, ça pousse sur gitlab, j'ai la CI qui se met en route et pousse sur la registry du Hub Docker
+# 1/ Prepare your Dockerfile
 
-## 1/ Prepare your Dockerfile
-
-My Dockerfile is quite simple, i am pretty sure it is not the best but at least it works:
+My `Dockerfile` is quite simple:
 
     FROM centos:7
 
@@ -37,9 +42,9 @@ My Dockerfile is quite simple, i am pretty sure it is not the best but at least 
 
     CMD ["/sbin/init"]
 
-## 2/ Build, Run, Test & Push your container
+# 2/ Build, Run, Test & Push your container manually
 
-Make sure the build is working:
+Make sure the build of the container is working:
 
     $ docker build --tag silefort/docker-ci-dind .
 
@@ -51,16 +56,16 @@ Lets use docker within docker to test our image ( first start the docker daemon 
 
     $ docker exec docker-ci-dind systemctl start docker && docker run hello-world
 
-Finally, let's push our new image to docker hub so that it can be pulled. To do that you need an account on hub.docker.com
+Finally, let's push our new image to docker hub so that it can be pulled (To do that you need an account on hub.docker.com ).
 
     $ docker login -u <username>
     $ docker push silefort/docker-ci-dind:latest
 
-## 3/ Prepare your CI file
+# 3/ Prepare your CI file
 
 What we have right now is a working container that can be built, ran, tested and pushed to a registry, we just need to automate the process so that we don't have do to it manually everytime we change something
 
-Let's add a new .gitlab-ci.yml file to our Gitlab repo:
+Let's add a new `.gitlab-ci.yml` file to our Gitlab repo:
 
 	---
 	image: docker:19.03.1
@@ -85,24 +90,23 @@ Let's add a new .gitlab-ci.yml file to our Gitlab repo:
 			- docker push $CI_REGISTRY_IMAGE:latest
 
 
-This CI file will run within a container, login to your docker account, build and push your image
+This file will run within a container, login to your docker account, build and push your image to the docker hub registry
 
-## 4/ Add your credentials
+# 4/ Add your credentials
 
-To make it work you need to add the necessary variables ( CI_REGISTRY_IMAGE, CI_REGISTRY_USER, CI_REGISTRY_PASSWORD).
-CI_REGISTRY_IMAGE can be added directly in the CI file but your password but be stored elsewhere, Gitlab allows to add "protected" variables that can be used by the runners without exposing it in your .gitlab-ci.yml file
+To make it work you need to add the necessary variables ( `CI_REGISTRY_IMAGE`, `CI_REGISTRY_USER`, `CI_REGISTRY_PASSWORD`).
 
-To do so, just go to your gitlab repo, and then "Settings" / "CI/CD" / "Variables", you can then add:
+`CI_REGISTRY_IMAGE` can be added directly in the `.gitlab-ci.yml` file but your password but be stored elsewhere, Gitlab allows to add variables that can be used by the runners without exposing it in your `.gitlab-ci.yml` file
 
-CI_REGISTRY_USER and CI_REGISTRY_PASSWORD variables ( do not forget to "Mask" those values)
+To do so, just go to your gitlab repo, and then "Settings" / "CI/CD" / "Variables", you can then add `CI_REGISTRY_USER` and `CI_REGISTRY_PASSWORD` variables ( do not forget to "Mask" those values, especially your password)
 
-## 5/ Build your container and push it
+# 5/ Build your container and push it
 
-Just push your new .gitlab-ci.yml file to your repo and it should start a new build job. Jobs can be check in "CI/CD" / "Jobs"
+Just push your new `.gitlab-ci.yml` file to your repo and it should start a new build job. Jobs can be check in "CI/CD" / "Jobs"
 
-## 6/ Add a Test stage after the build to make sure it still works
+# 6/ Add a Test stage after the build to make sure it still works
 
-Edit your .gitlab-ci.yml file to add the following:
+Edit your `.gitlab-ci.yml` file to add the following:
 
 		test:
 			stage: test
@@ -117,5 +121,5 @@ Edit your .gitlab-ci.yml file to add the following:
 
 As you can see, the only thing we do here is pull back the container we just built, run it and exec a few things in it to make sure everything works properly
 
-That's it, you now have a complete CI that build a new container version for you everytime you make any modification to your Dockerfile
+That's it, you now have a complete CI that build a new container version for you everytime you make any modification to your `Dockerfile
 
