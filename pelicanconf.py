@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'@si_lefort'
 SITENAME = u'Tech This Out'
-SITEURL = '/'
+SITEURL = u''
 
 PATH = 'content'
 
@@ -24,8 +24,10 @@ TWITTER = 'https://twitter.com/si_lefort'
 GITHUB = 'https://github.com/silefort'
 
 # Feed generation is usually not desired when developing
-FEED_ATOM = None
-FEED_ALL_ATOM = None
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_RSS = 'feeds/all.rss.xml'
+# FEED_ATOM = None
+# FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
@@ -39,8 +41,8 @@ LINKS = (('Home', '/'),)
 
 # Social widget
 SOCIAL = (('Twitter', 'https://twitter.com/si_lefort'),
-        ('Github', 'https://github.com/silefort'),)
-        # ('Feed','https://feeds.com'),)
+        ('Github', 'https://github.com/silefort'),
+        ('Feed','/feeds/all.atom.xml'),)
 
 DEFAULT_PAGINATION = 10
 
