@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-05-10T00:00:00+02:00</updated><entry><title>What's Up #018</title><link href="/whats-up-018.html" rel="alternate"></link><published>2020-05-10T00:00:00+02:00</published><updated>2020-05-10T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-05-10:/whats-up-018.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-06-09T00:00:00+02:00</updated><entry><title>What's Up #019</title><link href="/whats-up-019.html" rel="alternate"></link><published>2020-06-09T00:00:00+02:00</published><updated>2020-06-09T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-06-09:/whats-up-019.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Public APIs&lt;/strong&gt;: This is an aggregated list of public APIs | &lt;a href="https://github.com/public-apis/public-apis"&gt;https://github.com/public-apis/public-apis&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What every developer should know about TCP&lt;/strong&gt;: Quick article about TCP and the link …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Public APIs&lt;/strong&gt;: This is an aggregated list of public APIs | &lt;a href="https://github.com/public-apis/public-apis"&gt;https://github.com/public-apis/public-apis&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What every developer should know about TCP&lt;/strong&gt;: Quick article about TCP and the link between latency and Bandwidth ( because yes, there is a difference between Bandwidth and Lantency )| &lt;a href="https://robertovitillo.com/what-every-developer-should-know-about-tcp/"&gt;https://robertovitillo.com/what-every-developer-should-know-about-tcp/&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Créer son propre Indicateur de Bourse: Pourquoi et Comment le Faire ?&lt;/strong&gt;: ( In French ) A nice tutorial that explain how to implement your own pro real time indicator | &lt;a href="https://www.youtube.com/watch?v=kdD6MGGMCrs"&gt;https://www.youtube.com/watch?v=kdD6MGGMCrs&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Awesome Agile&lt;/strong&gt;: Awesome List of resources on Agile Software Development | &lt;a href="https://github.com/lorabv/awesome-agile"&gt;https://github.com/lorabv/awesome-agile&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;6 Habits of Super Learners&lt;/strong&gt;: Learning = Investment !| &lt;a href="https://medium.com/personal-growth/6-habits-of-super-learners-63d466a254fd"&gt;https://medium.com/personal-growth/6-habits-of-super-learners-63d466a254fd&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="#What's Up"></category><category term="whatsup"></category></entry><entry><title>What's Up #018</title><link href="/whats-up-018.html" rel="alternate"></link><published>2020-05-10T00:00:00+02:00</published><updated>2020-05-10T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-05-10:/whats-up-018.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Tmux for mere mortals&lt;/strong&gt;: Name a more iconic couple than Tmux + Vim ! In this article the author provides a tmux conf working without the prefix key, give it a …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
 &lt;ul&gt;
