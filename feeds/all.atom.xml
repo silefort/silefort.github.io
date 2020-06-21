@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-06-09T00:00:00+02:00</updated><entry><title>What's Up #019</title><link href="/whats-up-019.html" rel="alternate"></link><published>2020-06-09T00:00:00+02:00</published><updated>2020-06-09T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-06-09:/whats-up-019.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-06-21T00:00:00+02:00</updated><entry><title>What's Up #020</title><link href="/whats-up-020.html" rel="alternate"></link><published>2020-06-21T00:00:00+02:00</published><updated>2020-06-21T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-06-21:/whats-up-020.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;I’m new to Engineering Management, what books should I read?&lt;/strong&gt;: Your To Read Pile is empty ? | &lt;a href="https://stevebennett.co/2020/04/22/im-new-to-engineering-management-what-books-should-i-read/"&gt;https://stevebennett.co/2020/04/22/im-new-to-engineering-management-what-books-should-i-read/&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spies Can Listen to Your …&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;I’m new to Engineering Management, what books should I read?&lt;/strong&gt;: Your To Read Pile is empty ? | &lt;a href="https://stevebennett.co/2020/04/22/im-new-to-engineering-management-what-books-should-i-read/"&gt;https://stevebennett.co/2020/04/22/im-new-to-engineering-management-what-books-should-i-read/&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spies Can Listen to Your Conversations by Watching a Light Bulb in the Room&lt;/strong&gt;: This shit is kinda scary... | &lt;a href="https://thehackernews.com/2020/06/lamphone-light-bulb-spy.html"&gt;https://thehackernews.com/2020/06/lamphone-light-bulb-spy.htm&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;8 steps to make your next meeting more productive&lt;/strong&gt;: Half of the meetings I attend to are not well prepared, wasting everybody's time. Prepare your meetings, your coworkers will thank you ! | &lt;a href="https://opensource.com/article/20/6/meeting-productivity"&gt;https://opensource.com/article/20/6/meeting-productivity&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;urlpages&lt;/strong&gt;: Create and view web pages stored entirely in the URL, that thing is quite clever, you can even encrypt your page for more security | &lt;a href="https://github.com/jstrieb/urlpages"&gt;https://github.com/jstrieb/urlpages&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Procrastination Guide: Go From Procrastinate Hero To Procrastinate Zero&lt;/strong&gt;: 5 simple steps to overcome procrastination | &lt;a href="https://dariusforoux.com/from-procrastinate-hero-to-procrastinate-zero/"&gt;https://dariusforoux.com/from-procrastinate-hero-to-procrastinate-zero/&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="#What's Up"></category><category term="whatsup"></category></entry><entry><title>What's Up #019</title><link href="/whats-up-019.html" rel="alternate"></link><published>2020-06-09T00:00:00+02:00</published><updated>2020-06-09T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-06-09:/whats-up-019.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Public APIs&lt;/strong&gt;: This is an aggregated list of public APIs | &lt;a href="https://github.com/public-apis/public-apis"&gt;https://github.com/public-apis/public-apis&lt;/a&gt;
 &lt;br&gt;&lt;/br&gt;&lt;/li&gt;
