@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-06-21T00:00:00+02:00</updated><entry><title>What's Up #020</title><link href="/whats-up-020.html" rel="alternate"></link><published>2020-06-21T00:00:00+02:00</published><updated>2020-06-21T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-06-21:/whats-up-020.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-06-29T00:00:00+02:00</updated><entry><title>What's Up #021</title><link href="/whats-up-021.html" rel="alternate"></link><published>2020-06-29T00:00:00+02:00</published><updated>2020-06-29T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-06-29:/whats-up-021.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;nginx-ui&lt;/strong&gt;: Modify your nginx conf through a nice UI | &lt;a href="https://github.com/schenkd/nginx-ui"&gt;https://github.com/schenkd/nginx-ui&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bypass youtube ads&lt;/strong&gt;: You can bypass youtube ads by adding a dot after the domain …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;nginx-ui&lt;/strong&gt;: Modify your nginx conf through a nice UI | &lt;a href="https://github.com/schenkd/nginx-ui"&gt;https://github.com/schenkd/nginx-ui&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bypass youtube ads&lt;/strong&gt;: You can bypass youtube ads by adding a dot after the domain | &lt;a href="https://www.reddit.com/r/webdev/comments/gzr3cq/fyi_you_can_bypass_youtube_ads_by_adding_a_dot/"&gt;https://www.reddit.com/r/webdev/comments/gzr3cq/fyi_you_can_bypass_youtube_ads_by_adding_a_dot/&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Choose&lt;/strong&gt;: awk for dummies | &lt;a href="https://github.com/theryangeary/choose"&gt;https://github.com/theryangeary/choose&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make Bash history more useful with these tips&lt;/strong&gt;: A collection of nice tips to improve your &lt;code&gt;history&lt;/code&gt; usage | &lt;a href="https://opensource.com/article/20/6/bash-history-control"&gt;https://opensource.com/article/20/6/bash-history-control&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="#What's Up"></category><category term="whatsup"></category></entry><entry><title>What's Up #020</title><link href="/whats-up-020.html" rel="alternate"></link><published>2020-06-21T00:00:00+02:00</published><updated>2020-06-21T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-06-21:/whats-up-020.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;I’m new to Engineering Management, what books should I read?&lt;/strong&gt;: Your To Read Pile is empty ? | &lt;a href="https://stevebennett.co/2020/04/22/im-new-to-engineering-management-what-books-should-i-read/"&gt;https://stevebennett.co/2020/04/22/im-new-to-engineering-management-what-books-should-i-read/&lt;/a&gt;
 &lt;br&gt;&lt;/br&gt;&lt;/li&gt;

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Tech This Out</title><link>/</link><description></description><lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0200</lastBuildDate><item><title>What's Up #020</title><link>/whats-up-020.html</link><description>&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+<rss version="2.0"><channel><title>Tech This Out</title><link>/</link><description></description><lastBuildDate>Mon, 29 Jun 2020 00:00:00 +0200</lastBuildDate><item><title>What's Up #021</title><link>/whats-up-021.html</link><description>&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;nginx-ui&lt;/strong&gt;: Modify your nginx conf through a nice UI | &lt;a href="https://github.com/schenkd/nginx-ui"&gt;https://github.com/schenkd/nginx-ui&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bypass youtube ads&lt;/strong&gt;: You can bypass youtube ads by adding a dot after the domain …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Simon</dc:creator><pubDate>Mon, 29 Jun 2020 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:None,2020-06-29:/whats-up-021.html</guid><category>#What's Up</category><category>whatsup</category></item><item><title>What's Up #020</title><link>/whats-up-020.html</link><description>&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;I’m new to Engineering Management, what books should I read?&lt;/strong&gt;: Your To Read Pile is empty ? | &lt;a href="https://stevebennett.co/2020/04/22/im-new-to-engineering-management-what-books-should-i-read/"&gt;https://stevebennett.co/2020/04/22/im-new-to-engineering-management-what-books-should-i-read/&lt;/a&gt;
 &lt;br&gt;&lt;/br&gt;&lt;/li&gt;
