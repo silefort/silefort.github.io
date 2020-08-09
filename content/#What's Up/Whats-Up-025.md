@@ -1,4 +1,4 @@
-title: What's Up #024
+title: What's Up #025
 description: A quick extract of the articles that caught my attention this last week
 date: 20200808
 author: Simon
