@@ -79,8 +79,8 @@
                 <a href="/tag/devops.html" >devops (1)</a> &#124; 
                 <a href="/tag/docker.html" >docker (1)</a> &#124; 
                 <a href="/tag/tutorial.html" >tutorial (1)</a> &#124; 
-                <a href="/tag/whatsup.html" >whatsup (26)</a> &#124; 
-                <a href="/archives.html" >Archives (27)</a>
+                <a href="/tag/whatsup.html" >whatsup (27)</a> &#124; 
+                <a href="/archives.html" >Archives (28)</a>
         </div>
     </div>
 
@@ -114,27 +114,27 @@
 </ul>
 <h1>1/ Prepare your Dockerfile</h1>
 <p>My <code>Dockerfile</code> is quite simple:</p>
-<div class="highlight"><pre><span></span><code><span class="k">FROM</span> <span class="n">centos</span><span class="p">:</span><span class="mi">7</span>
+<div class="highlight"><pre><span></span><code><span class="n">FROM</span> <span class="n">centos</span><span class="p">:</span><span class="mi">7</span>
 
 <span class="n">ENV</span> <span class="n">container</span> <span class="n">docker</span>
 
-<span class="n">RUN</span> <span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">sudo</span> <span class="n">procps</span><span class="o">-</span><span class="n">ng</span> <span class="n">net</span><span class="o">-</span><span class="n">tools</span> <span class="n">iproute</span> <span class="n">iputils</span> <span class="n">wget</span> <span class="n">docker</span> <span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="n">clean</span> <span class="k">all</span>
+<span class="n">RUN</span> <span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">sudo</span> <span class="n">procps</span><span class="o">-</span><span class="n">ng</span> <span class="n">net</span><span class="o">-</span><span class="n">tools</span> <span class="n">iproute</span> <span class="n">iputils</span> <span class="n">wget</span> <span class="n">docker</span> <span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="n">clean</span> <span class="n">all</span>
 
-<span class="n">RUN</span> <span class="p">(</span><span class="n">cd</span> <span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="k">system</span><span class="o">/</span><span class="n">sysinit</span><span class="p">.</span><span class="n">target</span><span class="p">.</span><span class="n">wants</span><span class="o">/</span><span class="p">;</span> <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="o">*</span><span class="p">;</span> <span class="k">do</span> <span class="p">[</span> <span class="err">$</span><span class="n">i</span> <span class="o">==</span> <span class="err">\</span>
-<span class="n">systemd</span><span class="o">-</span><span class="n">tmpfiles</span><span class="o">-</span><span class="n">setup</span><span class="p">.</span><span class="n">service</span> <span class="p">]</span> <span class="o">||</span> <span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="err">$</span><span class="n">i</span><span class="p">;</span> <span class="n">done</span><span class="p">);</span> <span class="err">\</span>
-<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="k">system</span><span class="o">/</span><span class="n">multi</span><span class="o">-</span><span class="k">user</span><span class="p">.</span><span class="n">target</span><span class="p">.</span><span class="n">wants</span><span class="cm">/*;\</span>
-<span class="cm">rm -f /etc/systemd/system/*.wants/*;\</span>
-<span class="cm">rm -f /lib/systemd/system/local-fs.target.wants/*; \</span>
-<span class="cm">rm -f /lib/systemd/system/sockets.target.wants/*udev*; \</span>
-<span class="cm">rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \</span>
-<span class="cm">rm -f /lib/systemd/system/basic.target.wants/*;\</span>
-<span class="cm">rm -f /lib/systemd/system/anaconda.target.wants/*;\</span>
-<span class="cm">rm -f /lib/systemd/system/*.wants/*update-utmp*;</span>
+<span class="n">RUN</span> <span class="p">(</span><span class="n">cd</span> <span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">sysinit</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">wants</span><span class="o">/</span><span class="p">;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="o">*</span><span class="p">;</span> <span class="n">do</span> <span class="p">[</span> <span class="o">$</span><span class="n">i</span> <span class="o">==</span> \
+<span class="n">systemd</span><span class="o">-</span><span class="n">tmpfiles</span><span class="o">-</span><span class="n">setup</span><span class="o">.</span><span class="n">service</span> <span class="p">]</span> <span class="o">||</span> <span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="o">$</span><span class="n">i</span><span class="p">;</span> <span class="n">done</span><span class="p">);</span> \
+<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">multi</span><span class="o">-</span><span class="n">user</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">wants</span><span class="o">/*</span><span class="p">;</span>\
+<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/*.</span><span class="n">wants</span><span class="o">/*</span><span class="p">;</span>\
+<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">local</span><span class="o">-</span><span class="n">fs</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">wants</span><span class="o">/*</span><span class="p">;</span> \
+<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">sockets</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">wants</span><span class="o">/*</span><span class="n">udev</span><span class="o">*</span><span class="p">;</span> \
+<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">sockets</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">wants</span><span class="o">/*</span><span class="n">initctl</span><span class="o">*</span><span class="p">;</span> \
+<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">basic</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">wants</span><span class="o">/*</span><span class="p">;</span>\
+<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">anaconda</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">wants</span><span class="o">/*</span><span class="p">;</span>\
+<span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/*.</span><span class="n">wants</span><span class="o">/*</span><span class="n">update</span><span class="o">-</span><span class="n">utmp</span><span class="o">*</span><span class="p">;</span>
 
-<span class="cm"># https://www.freedesktop.org/wiki/Software/systemd/ContainerInterface/</span>
-<span class="cm">STOPSIGNAL SIGRTMIN+3</span>
+<span class="c1"># https://www.freedesktop.org/wiki/Software/systemd/ContainerInterface/</span>
+<span class="n">STOPSIGNAL</span> <span class="n">SIGRTMIN</span><span class="o">+</span><span class="mi">3</span>
 
-<span class="cm">CMD [&quot;/sbin/init&quot;]</span>
+<span class="n">CMD</span> <span class="p">[</span><span class="s2">&quot;/sbin/init&quot;</span><span class="p">]</span>
 </code></pre></div>
 
 
@@ -163,27 +163,27 @@ $ docker push silefort/docker-ci-dind:latest
 <h1>3/ Prepare your CI file</h1>
 <p>What we have right now is a working container that can be built, ran, tested and pushed to a registry, we just need to automate the process so that we don't have do to it manually everytime we change something</p>
 <p>Let's add a new <code>.gitlab-ci.yml</code> file to our Gitlab repo:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">---</span>
-<span class="n">image</span><span class="p">:</span> <span class="n">docker</span><span class="p">:</span><span class="mi">19</span><span class="p">.</span><span class="mi">03</span><span class="p">.</span><span class="mi">1</span>
+<div class="highlight"><pre><span></span><code><span class="o">---</span>
+<span class="n">image</span><span class="p">:</span> <span class="n">docker</span><span class="p">:</span><span class="mf">19.03</span><span class="o">.</span><span class="mi">1</span>
 
 <span class="n">variables</span><span class="p">:</span>
     <span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span> <span class="n">silefort</span><span class="o">/</span><span class="n">docker</span><span class="o">-</span><span class="n">ci</span><span class="o">-</span><span class="n">dind</span>
 
 <span class="n">services</span><span class="p">:</span>
-    <span class="o">-</span> <span class="n">docker</span><span class="p">:</span><span class="mi">19</span><span class="p">.</span><span class="mi">03</span><span class="p">.</span><span class="mi">1</span><span class="o">-</span><span class="n">dind</span>
+    <span class="o">-</span> <span class="n">docker</span><span class="p">:</span><span class="mf">19.03</span><span class="o">.</span><span class="mi">1</span><span class="o">-</span><span class="n">dind</span>
 
 <span class="n">before_script</span><span class="p">:</span>
-    <span class="o">-</span> <span class="n">docker</span> <span class="n">login</span> <span class="o">-</span><span class="n">u</span> <span class="err">$</span><span class="n">CI_REGISTRY_USER</span> <span class="o">-</span><span class="n">p</span> <span class="err">$</span><span class="n">CI_REGISTRY_PASSWORD</span>
+    <span class="o">-</span> <span class="n">docker</span> <span class="n">login</span> <span class="o">-</span><span class="n">u</span> <span class="o">$</span><span class="n">CI_REGISTRY_USER</span> <span class="o">-</span><span class="n">p</span> <span class="o">$</span><span class="n">CI_REGISTRY_PASSWORD</span>
 
 <span class="n">build</span><span class="p">:</span>
     <span class="n">stage</span><span class="p">:</span> <span class="n">build</span>
     <span class="n">script</span><span class="p">:</span>
-        <span class="o">-</span> <span class="n">docker</span> <span class="n">pull</span> <span class="err">$</span><span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span><span class="n">latest</span> <span class="o">||</span> <span class="k">true</span>
-        <span class="o">-</span> <span class="n">docker</span> <span class="n">build</span> <span class="c1">--cache-from $CI_REGISTRY_IMAGE:latest</span>
-                                     <span class="c1">--tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA</span>
-                                     <span class="c1">--tag $CI_REGISTRY_IMAGE:latest .</span>
-        <span class="o">-</span> <span class="n">docker</span> <span class="n">push</span> <span class="err">$</span><span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span><span class="err">$</span><span class="n">CI_COMMIT_SHA</span>
-        <span class="o">-</span> <span class="n">docker</span> <span class="n">push</span> <span class="err">$</span><span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span><span class="n">latest</span>
+        <span class="o">-</span> <span class="n">docker</span> <span class="n">pull</span> <span class="o">$</span><span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span><span class="n">latest</span> <span class="o">||</span> <span class="bp">true</span>
+        <span class="o">-</span> <span class="n">docker</span> <span class="n">build</span> <span class="o">--</span><span class="n">cache</span><span class="o">-</span><span class="n">from</span> <span class="o">$</span><span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span><span class="n">latest</span>
+                                     <span class="o">--</span><span class="n">tag</span> <span class="o">$</span><span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span><span class="o">$</span><span class="n">CI_COMMIT_SHA</span>
+                                     <span class="o">--</span><span class="n">tag</span> <span class="o">$</span><span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span><span class="n">latest</span> <span class="o">.</span>
+        <span class="o">-</span> <span class="n">docker</span> <span class="n">push</span> <span class="o">$</span><span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span><span class="o">$</span><span class="n">CI_COMMIT_SHA</span>
+        <span class="o">-</span> <span class="n">docker</span> <span class="n">push</span> <span class="o">$</span><span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span><span class="n">latest</span>
 </code></pre></div>
 
 
@@ -196,16 +196,16 @@ $ docker push silefort/docker-ci-dind:latest
 <p>Just push your new <code>.gitlab-ci.yml</code> file to your repo and it should start a new build job. Jobs can be check in "CI/CD" / "Jobs"</p>
 <h1>6/ Add a Test stage after the build to make sure it still works</h1>
 <p>Edit your <code>.gitlab-ci.yml</code> file to add the following:</p>
-<div class="highlight"><pre><span></span><code><span class="err">    test:</span>
-<span class="err">        stage: test</span>
-<span class="err">        script:</span>
-<span class="err">            - docker pull $CI_REGISTRY_IMAGE:latest</span>
-<span class="err">            - docker run -id -v /sys/fs/cgroup -v /var/lib/docker --privileged --name docker-ci-dind $CI_REGISTRY_IMAGE</span>
-<span class="err">            - docker ps</span>
-<span class="err">            - docker exec docker-ci-dind yum install -y docker</span>
-<span class="err">            - docker exec docker-ci-dind systemctl start docker</span>
-<span class="err">            - docker exec docker-ci-dind docker info</span>
-<span class="err">            - docker exec docker-ci-dind docker run hello-world</span>
+<div class="highlight"><pre><span></span><code>    <span class="n">test</span><span class="p">:</span>
+        <span class="n">stage</span><span class="p">:</span> <span class="n">test</span>
+        <span class="n">script</span><span class="p">:</span>
+            <span class="o">-</span> <span class="n">docker</span> <span class="n">pull</span> <span class="o">$</span><span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span><span class="n">latest</span>
+            <span class="o">-</span> <span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">id</span> <span class="o">-</span><span class="n">v</span> <span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">fs</span><span class="o">/</span><span class="n">cgroup</span> <span class="o">-</span><span class="n">v</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">docker</span> <span class="o">--</span><span class="n">privileged</span> <span class="o">--</span><span class="n">name</span> <span class="n">docker</span><span class="o">-</span><span class="n">ci</span><span class="o">-</span><span class="n">dind</span> <span class="o">$</span><span class="n">CI_REGISTRY_IMAGE</span>
+            <span class="o">-</span> <span class="n">docker</span> <span class="n">ps</span>
+            <span class="o">-</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">docker</span><span class="o">-</span><span class="n">ci</span><span class="o">-</span><span class="n">dind</span> <span class="n">yum</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">docker</span>
+            <span class="o">-</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">docker</span><span class="o">-</span><span class="n">ci</span><span class="o">-</span><span class="n">dind</span> <span class="n">systemctl</span> <span class="n">start</span> <span class="n">docker</span>
+            <span class="o">-</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">docker</span><span class="o">-</span><span class="n">ci</span><span class="o">-</span><span class="n">dind</span> <span class="n">docker</span> <span class="n">info</span>
+            <span class="o">-</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">docker</span><span class="o">-</span><span class="n">ci</span><span class="o">-</span><span class="n">dind</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">hello</span><span class="o">-</span><span class="n">world</span>
 </code></pre></div>
 
 
