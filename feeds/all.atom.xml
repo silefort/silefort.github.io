@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-09-18T00:00:00+02:00</updated><entry><title>What's Up #027</title><link href="/whats-up-027.html" rel="alternate"></link><published>2020-09-18T00:00:00+02:00</published><updated>2020-09-18T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-09-18:/whats-up-027.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-09-25T00:00:00+02:00</updated><entry><title>What's Up #028</title><link href="/whats-up-028.html" rel="alternate"></link><published>2020-09-25T00:00:00+02:00</published><updated>2020-09-25T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-09-25:/whats-up-028.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Webify&lt;/strong&gt;: Turn shell commands into web services | &lt;a href="https://github.com/beefsack/webify"&gt;https://github.com/beefsack/webify&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How to use pyenv to run multiple versions of Python on a Mac&lt;/strong&gt;: I recently re-installed my …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Webify&lt;/strong&gt;: Turn shell commands into web services | &lt;a href="https://github.com/beefsack/webify"&gt;https://github.com/beefsack/webify&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How to use pyenv to run multiple versions of Python on a Mac&lt;/strong&gt;: I recently re-installed my mac and I decided to do it right this time | &lt;a href="https://opensource.com/article/20/4/pyenv"&gt;https://opensource.com/article/20/4/pyenv&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Taming the tar command: Tips for managing backups in Linux&lt;/strong&gt;: This is a quick tar command cheatsheet | &lt;a href="https://www.redhat.com/sysadmin/taming-tar-command"&gt;https://www.redhat.com/sysadmin/taming-tar-command&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;kb&lt;/strong&gt;: A minimalist knowledge base manager | &lt;a href="https://github.com/gnebbia/kb"&gt;https://github.com/gnebbia/kb&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="#What's Up"></category><category term="whatsup"></category></entry><entry><title>What's Up #027</title><link href="/whats-up-027.html" rel="alternate"></link><published>2020-09-18T00:00:00+02:00</published><updated>2020-09-18T00:00:00+02:00</updated><author><name>Simon</name></author><id>tag:None,2020-09-18:/whats-up-027.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;What happens when...&lt;/strong&gt;: What happens when you enter google.com in your browser, from the electric impulsion in your keyboard to graphical rendering in your web browser | &lt;a href="https://github.com/alex/what-happens-when"&gt;https://github …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
 &lt;ul&gt;
