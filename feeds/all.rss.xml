@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Tech This Out</title><link>/</link><description></description><lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0200</lastBuildDate><item><title>What's Up #028</title><link>/whats-up-028.html</link><description>&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+<rss version="2.0"><channel><title>Tech This Out</title><link>/</link><description></description><lastBuildDate>Fri, 02 Oct 2020 00:00:00 +0200</lastBuildDate><item><title>What's Up #029</title><link>/whats-up-029.html</link><description>&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Four Elements of Simple Design&lt;/strong&gt;: The 4 elements of a simple design are: 1. Passes its tests, 2. Minimizes duplication, 3. Maximizes clarity, 4. Has fewer elements. This …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Simon</dc:creator><pubDate>Fri, 02 Oct 2020 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:None,2020-10-02:/whats-up-029.html</guid><category>#What's Up</category><category>whatsup</category></item><item><title>What's Up #028</title><link>/whats-up-028.html</link><description>&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Webify&lt;/strong&gt;: Turn shell commands into web services | &lt;a href="https://github.com/beefsack/webify"&gt;https://github.com/beefsack/webify&lt;/a&gt;
 &lt;br&gt;&lt;/br&gt;&lt;/li&gt;
