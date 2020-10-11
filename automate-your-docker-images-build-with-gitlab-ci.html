@@ -79,8 +79,8 @@
                 <a href="/tag/devops.html" >devops (1)</a> &#124; 
                 <a href="/tag/docker.html" >docker (1)</a> &#124; 
                 <a href="/tag/tutorial.html" >tutorial (1)</a> &#124; 
-                <a href="/tag/whatsup.html" >whatsup (29)</a> &#124; 
-                <a href="/archives.html" >Archives (30)</a>
+                <a href="/tag/whatsup.html" >whatsup (30)</a> &#124; 
+                <a href="/archives.html" >Archives (31)</a>
         </div>
     </div>
 
@@ -137,28 +137,23 @@
 <span class="n">CMD</span> <span class="p">[</span><span class="s2">&quot;/sbin/init&quot;</span><span class="p">]</span>
 </code></pre></div>
 
-
 <h1>2/ Build, Run, Test &amp; Push your container manually</h1>
 <p>Make sure the build of the container is working:</p>
 <div class="highlight"><pre><span></span><code>$ docker build --tag silefort/docker-ci-dind .
 </code></pre></div>
 
-
 <p>Make sure it can be ran properly:</p>
 <div class="highlight"><pre><span></span><code>$ docker run -id -v /sys/fs/cgroup -v /var/lib/docker --privileged --name docker-ci-dind silefort/docker-ci-dind
 </code></pre></div>
-
 
 <p>Lets use docker within docker to test our image ( first start the docker daemon within our container, then run an hello-world container to make sure it works)</p>
 <div class="highlight"><pre><span></span><code>$ docker <span class="nb">exec</span> docker-ci-dind systemctl start docker <span class="o">&amp;&amp;</span> docker run hello-world
 </code></pre></div>
 
-
 <p>Finally, let's push our new image to docker hub so that it can be pulled (To do that you need an account on hub.docker.com ).</p>
 <div class="highlight"><pre><span></span><code>$ docker login -u &lt;username&gt;
 $ docker push silefort/docker-ci-dind:latest
 </code></pre></div>
-
 
 <h1>3/ Prepare your CI file</h1>
 <p>What we have right now is a working container that can be built, ran, tested and pushed to a registry, we just need to automate the process so that we don't have do to it manually everytime we change something</p>
@@ -186,7 +181,6 @@ $ docker push silefort/docker-ci-dind:latest
         <span class="o">-</span> <span class="n">docker</span> <span class="n">push</span> <span class="o">$</span><span class="n">CI_REGISTRY_IMAGE</span><span class="p">:</span><span class="n">latest</span>
 </code></pre></div>
 
-
 <p>This file will run within a container, login to your docker account, build and push your image to the docker hub registry</p>
 <h1>4/ Add your credentials</h1>
 <p>To make it work you need to add the necessary variables ( <code>CI_REGISTRY_IMAGE</code>, <code>CI_REGISTRY_USER</code>, <code>CI_REGISTRY_PASSWORD</code>).</p>
@@ -207,7 +201,6 @@ $ docker push silefort/docker-ci-dind:latest
             <span class="o">-</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">docker</span><span class="o">-</span><span class="n">ci</span><span class="o">-</span><span class="n">dind</span> <span class="n">docker</span> <span class="n">info</span>
             <span class="o">-</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">docker</span><span class="o">-</span><span class="n">ci</span><span class="o">-</span><span class="n">dind</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">hello</span><span class="o">-</span><span class="n">world</span>
 </code></pre></div>
-
 
 <p>As you can see, the only thing we do here is pull back the container we just built, run it and exec a few things in it to make sure everything works properly</p>
 <p>That's it, you now have a complete CI that build a new container version for you everytime you make any modification to your `Dockerfile</p>
