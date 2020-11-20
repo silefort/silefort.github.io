@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-11-06T00:00:00+01:00</updated><entry><title>What's Up #033</title><link href="/whats-up-033.html" rel="alternate"></link><published>2020-11-06T00:00:00+01:00</published><updated>2020-11-06T00:00:00+01:00</updated><author><name>Simon</name></author><id>tag:None,2020-11-06:/whats-up-033.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-11-20T00:00:00+01:00</updated><entry><title>What's Up #034</title><link href="/whats-up-034.html" rel="alternate"></link><published>2020-11-20T00:00:00+01:00</published><updated>2020-11-20T00:00:00+01:00</updated><author><name>Simon</name></author><id>tag:None,2020-11-20:/whats-up-034.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Social Dilemma&lt;/strong&gt;: I am currently exploring a lot my own relationship with technologies and how it affects me ( how it affects my mood, my capacity to focus...), this …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Social Dilemma&lt;/strong&gt;: I am currently exploring a lot my own relationship with technologies and how it affects me ( how it affects my mood, my capacity to focus...), this Netflix documentary is a good starting point if you want to reflect on this topic too | &lt;a href="https://www.thesocialdilemma.com/"&gt;https://www.thesocialdilemma.com/&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;This is how I git&lt;/strong&gt;: The Lead Dev of curl explains how he uses git | &lt;a href="https://daniel.haxx.se/blog/2020/11/09/this-is-how-i-git/"&gt;https://daniel.haxx.se/blog/2020/11/09/this-is-how-i-git/&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gping&lt;/strong&gt;: Ping, but with a graph | &lt;a href="https://github.com/orf/gping"&gt;https://github.com/orf/gping&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bit&lt;/strong&gt;: bit is an experimental modernized git CLI | &lt;a href="https://github.com/chriswalz/bit"&gt;https://github.com/chriswalz/bit&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="#What's Up"></category><category term="whatsup"></category></entry><entry><title>What's Up #033</title><link href="/whats-up-033.html" rel="alternate"></link><published>2020-11-06T00:00:00+01:00</published><updated>2020-11-06T00:00:00+01:00</updated><author><name>Simon</name></author><id>tag:None,2020-11-06:/whats-up-033.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Don't Copy Paste Into A Shell&lt;/strong&gt;: Yes, don't do that please ! | &lt;a href="https://briantracy.xyz/writing/copy-paste-shell.html"&gt;https://briantracy.xyz/writing/copy-paste-shell.html&lt;/a&gt;
 &lt;br&gt;&lt;/br&gt;&lt;/li&gt;
