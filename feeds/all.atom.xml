@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-11-20T00:00:00+01:00</updated><entry><title>What's Up #034</title><link href="/whats-up-034.html" rel="alternate"></link><published>2020-11-20T00:00:00+01:00</published><updated>2020-11-20T00:00:00+01:00</updated><author><name>Simon</name></author><id>tag:None,2020-11-20:/whats-up-034.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech This Out</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-11-29T00:00:00+01:00</updated><entry><title>What's Up #035</title><link href="/whats-up-035.html" rel="alternate"></link><published>2020-11-29T00:00:00+01:00</published><updated>2020-11-29T00:00:00+01:00</updated><author><name>Simon</name></author><id>tag:None,2020-11-29:/whats-up-035.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;p&gt;This week, it is a Vim special:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vim Text Objects: The Definitive Guide&lt;/strong&gt;: This is the best article I read about "objects" in Vim | &lt;a href="https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/"&gt;https://blog.carbonfive.com/vim-text-objects-the-definitive-guide …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
+&lt;p&gt;This week, it is a Vim special:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vim Text Objects: The Definitive Guide&lt;/strong&gt;: This is the best article I read about "objects" in Vim | &lt;a href="https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/"&gt;https://blog.carbonfive.com/vim-text-objects-the-definitive-guide/&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mastering the Vim Language&lt;/strong&gt;: Great talk about (again) Vim viewed as a language | &lt;a href="https://www.youtube.com/watch?v=wlR5gYd6um0"&gt;https://www.youtube.com/watch?v=wlR5gYd6um0&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How to use Ansible to configure Vim&lt;/strong&gt;: the title is self explanatory | &lt;a href="https://www.redhat.com/sysadmin/ansible-configure-vim"&gt;https://www.redhat.com/sysadmin/ansible-configure-vim&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vim Hardtime&lt;/strong&gt;: This is a Vim plugin that will prevent you from using hjkl repetively to naviguate, forcing yourlself to find other means to achieve what you want | &lt;a href="https://github.com/takac/vim-hardtime"&gt;https://github.com/takac/vim-hardtime&lt;/a&gt;
+&lt;br&gt;&lt;/br&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="#What's Up"></category><category term="whatsup"></category></entry><entry><title>What's Up #034</title><link href="/whats-up-034.html" rel="alternate"></link><published>2020-11-20T00:00:00+01:00</published><updated>2020-11-20T00:00:00+01:00</updated><author><name>Simon</name></author><id>tag:None,2020-11-20:/whats-up-034.html</id><summary type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;The Social Dilemma&lt;/strong&gt;: I am currently exploring a lot my own relationship with technologies and how it affects me ( how it affects my mood, my capacity to focus...), this …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Every week, I try to read a few articles about tech, productivity, finances... and I summarize what I found relevant here:&lt;/p&gt;
 &lt;ul&gt;
