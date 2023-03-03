@@ -41,10 +41,14 @@ jobs:
         run: ls content/ && docker build -t pelican .
       - name: Build the html content
         run: docker run -v $(pwd):/app -e CI=true pelican make DEBUG=1 html
+      - name: Check current dir
+        run: ls .
+      - name: Check output dir
+        run: ls ./output
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./public
+          path: ./output
 
   # Deployment job
   deploy:
