@@ -1,0 +1,23 @@
+---
+sudo: required
+services:
+  - docker
+
+before_install:
+  - ls content/
+  - docker build -t pelican .
+
+script:
+  - docker run -v $(pwd):/app -e CI=true pelican make DEBUG=1 html
+  - ls .
+  - ls output/
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  local_dir: output
+  target_branch: master
+  on:
+    branch: dev
