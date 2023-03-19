@@ -10,11 +10,11 @@ This repo is used to build and host my personal Tech Blog on github pages
 
 ### Build the development container
 
-    $ docker build -t pelican .
+    $ podman build -t pelican .
 
 ### Run your development container
 
-    $ docker run --rm -di -p 80:80 -v $(pwd):/app --name pelican pelican
+    $ podman run --rm -di -p 8000:80 -v $(pwd):/app --name pelican pelican
 
 Your blog is then accessible at http://localhost
 
@@ -22,4 +22,4 @@ Your blog is then accessible at http://localhost
 
 Once you've worked on your website (mostly working with markdown pages and pelicanconf ), you can update your html pages using the following command:
 
-    $ docker exec pelican make html
+    $ podman exec pelican make html

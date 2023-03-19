@@ -21,4 +21,6 @@ RUN pip3 install pelican==4.2.0      \
 COPY . .
 EXPOSE 80
 
-CMD ["pelican","--listen","-p","80","-b","0.0.0.0"]
+RUN make html
+
+CMD ["make","serve-global","PORT=80"]
