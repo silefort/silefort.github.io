@@ -19,8 +19,8 @@ Cependant, nous constatons aujourd'hui de plus en plus de situations, d'environn
 
 Lorsque nous lançons une initiative, nous pouvons nous attendre à en tirer deux types de résultats :
 
-* Un premier résultat direct, ce qui est produit : la nouvelle fonctionnalité, la migration d'une plateforme, une nouvelle campagne marketing, notre meilleur gâteau. C'est l'objectif final, le "quoi".
-* Un second résultat indirect : l'apprentissage individuel et collectif, c'est un résultat collatéral qui représente la connaissance acquise au cours de la réalisation, le "comment".
+* Un premier **résultat direct**, ce qui est produit : la nouvelle fonctionnalité, la migration d'une plateforme, une nouvelle campagne marketing, notre meilleur gâteau. C'est l'objectif final, le "quoi".
+* Un second **résultat indirect** : l'apprentissage individuel et collectif, c'est un résultat collatéral qui représente la connaissance acquise au cours de la réalisation, le "comment".
 
 Bien que souvent mis de côté, le résultat indirect, l'apprentissage est au moins aussi important que le résultat direct. C’est de petits apprentissages en petits apprentissages que les hypothèses d’un début de projet vont progressivement se transformer en connaissances validées. Sauf dans de rares cas "simples" où l'application stricte de processus préétablis peut fonctionner, avoir la bonne solution à un problème "à priori" a peu de chances d'arriver. Quand nous commençons à travailler sur un nouveau projet, un nouveau domaine, nos premières itérations sont rarement les bonnes, et c'est normal, nous cherchons probablement à résoudre des problèmes que personne n'a encore résolu dans notre contexte, il est normal de ne pas toujours prendre la bonne décision ou de lancer la bonne initiative du premier coup.
 
@@ -44,7 +44,7 @@ Il est important de regarder ses échecs en face afin d'identifier des pistes d'
 
 # Et si on arrêtait de parler d’échec ?
 
-Si nous revenons dans le monde des jeux d'argent ou du trading, on considère qu'il existe 4 types de paris(https://www.goodreads.com/book/show/44130323-the-rule) :
+Si nous revenons dans le monde des jeux d'argent ou du trading, on considère qu'il existe [4 types de paris](https://www.goodreads.com/book/show/44130323-the-rule):
 
 * Les paris *gagnants*
 * Les paris *perdants*
