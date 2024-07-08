@@ -4,8 +4,6 @@ date: 20230708
 author: Simon
 tags: article, méthodo
 
-# Ce bon vieux papier/crayon
-
 Nos cerveaux ont des capacités magnifiques ! Ils sont capables d'organiser, de tirer des liens entre des idées, de générer de nouvelles idées... mais il y a une chose qu'ils font mal (en tous cas le mien, et c'est de pire en pire) : c'est se souvenir. Nos cerveaux sont faits pour réfléchir, pas pour se souvenir.
 
 Pour travailler, j'ai besoin de deux outils :
