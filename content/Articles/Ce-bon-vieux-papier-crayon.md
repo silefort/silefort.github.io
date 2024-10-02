@@ -1,6 +1,6 @@
 title: Ce bon vieux papier/crayon
 description: Pourquoi j'ai remplacé quasi toutes mes apps par un carnet et un stylo
-date: 20230708
+date: 20240708
 author: Simon
 tags: article, méthodo
 
