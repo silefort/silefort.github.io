@@ -20,7 +20,7 @@ Une référence c'est un alias compréhensible qui pointe sur un commit. Pensez 
 
 On manipule beaucoup de références quand on utilise Git : 
 
-* `Les branches` : `mafeaturebranch`est une référence qui se déplace au fur et à mesure que "j'ajoute" des commits à ma branche (cette définition n'est pas complètement exacte, mais pour notre sujet d'aujourd'hui on va dire que l'approximation suffit).
+* `Les branches` : `mafeaturebranch` est une référence qui se déplace au fur et à mesure que "j'ajoute" des commits à ma branche (cette définition n'est pas complètement exacte, mais pour notre sujet d'aujourd'hui on va dire que l'approximation suffit).
 * `Les tags` :  Un tag est un pointeur vers un commit particulier.
 * `stash` : stash est également une référence un peu particulière vers un commit.
 * `head`: on en reparle juste en dessous.
@@ -181,7 +181,7 @@ aea190a06 HEAD@{1}: commit: commit 3
 ```
 
 
-Si j'ai malencontreusement supprimé une branche que je n'avais pas poussé sur mon serveur (quelque chose du genre `git branch -D mabranche` ou `git checkout -B mabranch origin/mabranch`, je peux assez facilement me ratrapper : 
+Si j'ai malencontreusement supprimé une branche que je n'avais pas poussé sur mon serveur (quelque chose du genre `git branch -D mabranche` ou `git checkout -B mabranch origin/mabranch`, je peux assez facilement me rattraper : 
 ```
 # Je checkout une nouvelle branche et je créer quelques commits
 git checkout -b monautrebranche
